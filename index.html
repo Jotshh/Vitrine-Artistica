@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Artistas — Vitrine Artística de Jardim</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+  
+
+  <script src="js/app.js" defer></script>
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="#" class="nav-logo">Vitrine <span>Artística</span></a>
+    <ul class="nav-links">
+      <li><a href="#">Início</a></li>
+      <li><a href="#h1" class="active">Artistas</a></li>
+      <li><a href="pages/sobre-nos.html">Sobre Nós</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="page-header-left">
+      <h1 id="h1">Nossos<br><em>Artistas</em></h1>
+      <p>Conheça os talentos que expressam a alma criativa de Mato Grosso do Sul, por meio de suas obras e histórias únicas.</p>
+    </div>
+    <div class="page-header-right">
+      <span class="count-badge">24 artistas</span>
+    </div>
+  </header>
+
+  <!-- FILTERS -->
+  <div class="filters-bar">
+    <span class="filter-label">Filtrar por</span>
+    <button class="filter-btn active" onclick="filterArtists('todos', this)">Todos</button>
+    <button class="filter-btn" onclick="filterArtists('pintura', this)">Pintura</button>
+    <button class="filter-btn" onclick="filterArtists('escultura', this)">Escultura</button>
+    <button class="filter-btn" onclick="filterArtists('fotografia', this)">Fotografia</button>
+    <button class="filter-btn" onclick="filterArtists('artesanato', this)">Artesanato</button>
+    <button class="filter-btn" onclick="filterArtists('desenho', this)">Desenho</button>
+    <button class="filter-btn" onclick="filterArtists('musica', this)">Música</button>
+  </div>
+
+  <!-- GRID -->
+  <main class="grid-section">
+    <div class="artists-grid" id="artistsGrid">
+   
+    </div>
+
+
+  </main>
+
+  <!-- LOAD MORE -->
+  <div class="load-more-section">
+    <button class="load-more-btn">
+      Carregar mais artistas
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">Vitrine <span>Artística</span></div>
+        <p>Plataforma dedicada a celebrar e difundir a arte e a cultura dos talentos regionais de Jardim, Mato Grosso do Sul.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Artistas</a></li>
+          <li><a href="#">Exposições</a></li>
+          <li><a href="#">Sobre Nós</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categorias</h4>
+        <ul>
+          <li><a href="#">Pintura</a></li>
+          <li><a href="#">Escultura</a></li>
+          <li><a href="#">Fotografia</a></li>
+          <li><a href="#">Artesanato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="#">Fale Conosco</a></li>
+          <li><a href="#">Seja um Artista</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vitrine Artística de Jardim — Todos os direitos reservados</span>
+      <div class="footer-dots">
+        <span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+  </footer>
+
+
+</html>
